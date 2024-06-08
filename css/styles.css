@@ -1,0 +1,594 @@
+@charset "UTF-8";
+/* Desde aca empieza el header*/
+header {
+  display: flex;
+  height: 23rem;
+  background-color: white;
+  justify-content: space-between;
+  padding: 2.5rem;
+  align-items: center;
+  font-size: 3.5rem;
+  font-family: "Courier New", Courier, monospace;
+}
+header .logo {
+  display: flex;
+  align-items: center;
+}
+header .logo img {
+  height: 30rem;
+}
+header body {
+  background-color: white;
+  margin: 0;
+  box-sizing: border-box;
+}
+header .topnav a {
+  text-decoration: none;
+  color: black;
+  font-size: 2.5rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 800;
+  padding: 3rem;
+}
+
+/* imagenes del inicio*/
+.lanzamiento .nl {
+  padding: 3rem;
+  border: 1px solid black;
+  border-radius: 3%;
+}
+.lanzamiento .nl h3 {
+  font-size: 3rem;
+}
+.lanzamiento .nl .img-nl {
+  width: 60rem;
+  border-radius: 5%;
+}
+.lanzamiento .reseña {
+  padding: 3rem;
+  border: 1px solid black;
+  border-radius: 3%;
+  height: 70rem;
+}
+.lanzamiento .reseña h3 {
+  font-size: 3rem;
+}
+.lanzamiento .reseña h4 {
+  font-size: 2.5rem;
+}
+
+/*mobile*/
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .layaout {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 2fr 0.5fr;
+    grid-template-areas: "nav" "header" "main" "aside" "aside" "footer";
+    /*grid-column gap: 1rem;
+    grid-row-gap: 1rem;
+    width: 100%;
+    height: 100vh;*/
+    /*HEADER*/
+    /*LANZAMIENTO*/
+    /*publicidad*/
+    /* tabla de generos*/
+  }
+  .layaout header {
+    font-size: 2rem;
+    padding: 2rem;
+    height: 15rem;
+    justify-content: space-between;
+    text-align: center;
+  }
+  .layaout header .logo {
+    display: flex;
+    align-items: center;
+  }
+  .layaout header .logo img {
+    height: 20rem;
+  }
+  .layaout header body {
+    background-color: white;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .layaout header .topnav a {
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+  .layaout .lanzamiento .nl h3 {
+    font-size: 2rem;
+  }
+  .layaout .lanzamiento .nl .img-nl {
+    border: 1px solid black;
+    border-radius: 3%;
+    height: 25rem;
+    width: 25rem;
+  }
+  .layaout .lanzamiento .reseña {
+    height: 50rem;
+  }
+  .layaout .lanzamiento .reseña h3 {
+    font-size: 2rem;
+  }
+  .layaout .lanzamiento .reseña h4 {
+    font-size: 1.5rem;
+  }
+  .layaout .publicidad {
+    justify-content: center;
+  }
+  .layaout .publicidad aside img {
+    width: 60rem;
+  }
+  .layaout article .tabla {
+    margin: 2rem;
+    padding: 1rem;
+    text-align: center;
+  }
+  .layaout article .tabla table td {
+    color: white;
+    width: 120rem;
+    background-color: white;
+    justify-content: center;
+    border: 1px solid black;
+    padding: 2rem;
+  }
+  .layaout .generos h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .layaout .perfumes {
+    display: flex;
+    background-color: white;
+    justify-content: center;
+  }
+  .layaout .perfumes article {
+    border: 1px solid black;
+    padding: 1rem;
+    text-align: center;
+    margin: 1rem;
+    border-radius: 3%;
+  }
+  .layaout .perfumes article .PerfumesNombres {
+    font-size: 2rem;
+  }
+  .layaout .perfumes article img {
+    border: 1px solid black;
+    border-radius: 3%;
+  }
+  .layaout .perfumes article .img {
+    height: 20rem;
+    width: 20rem;
+  }
+}
+/*publicidad*/
+.publicidad {
+  justify-content: center;
+  display: flex;
+}
+.publicidad aside img {
+  border: 1px solid black;
+  padding: 2rem;
+}
+
+.descripcion {
+  justify-content: center;
+  display: flex;
+  gap: 2rem;
+}
+.descripcion .somos {
+  border: 1px solid black;
+  border-radius: 3%;
+  padding: 2rem;
+}
+.descripcion .somos h3 {
+  font-size: 2.5rem;
+}
+.descripcion .somos h4 {
+  font-size: 1.5rem;
+}
+
+.generos h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.perfumes {
+  display: flex;
+  background-color: white;
+  justify-content: center;
+}
+.perfumes article {
+  border: 1px solid black;
+  padding: 2rem;
+  text-align: center;
+  margin: 1.5rem;
+  border-radius: 3%;
+}
+.perfumes article .PerfumesNombres {
+  font-size: 2rem;
+}
+.perfumes article img {
+  border: 1px solid black;
+  border-radius: 3%;
+}
+.perfumes article .img {
+  width: 30rem;
+}
+
+/* tabla de generos*/
+article .tabla {
+  margin: 2rem;
+  padding: 1rem;
+  text-align: center;
+}
+article .tabla table td {
+  color: white;
+  width: 120rem;
+  background-color: white;
+  justify-content: center;
+  border: 1px solid black;
+  padding: 2rem;
+}
+article .tabla table td a {
+  text-decoration: none;
+  color: black;
+  font-size: 2.5rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .layaout {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0.5fr 2fr 2fr 0.5fr;
+  }
+  /*HEADER*/
+  header {
+    font-size: 1rem;
+    padding: 1rem;
+    height: 10rem;
+    justify-content: space-between;
+    text-align: center;
+  }
+  header .logo {
+    display: flex;
+    align-items: center;
+  }
+  header .logo img {
+    height: 10rem;
+  }
+  header body {
+    background-color: white;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  header .topnav a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+  /*LANZAMIENTO*/
+  .lanzamiento .nl h3 {
+    font-size: 2rem;
+  }
+  .lanzamiento .nl .img-nl {
+    border: 1px solid black;
+    border-radius: 3%;
+    height: 25rem;
+    width: 25rem;
+  }
+  .lanzamiento .reseña {
+    height: 50rem;
+  }
+  .lanzamiento .reseña h3 {
+    font-size: 2rem;
+  }
+  .lanzamiento .reseña h4 {
+    font-size: 1.5rem;
+  }
+  /*publicidad*/
+  .publicidad {
+    justify-content: center;
+  }
+  .publicidad aside img {
+    width: 30rem;
+  }
+  /* tabla de generos*/
+  article .tabla {
+    margin: 2rem;
+    padding: 1rem;
+    text-align: center;
+  }
+  article .tabla table td {
+    color: white;
+    width: 120rem;
+    background-color: white;
+    justify-content: center;
+    border: 1px solid black;
+    padding: 2rem;
+  }
+  .generos h2 {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .perfumes {
+    display: flex;
+    background-color: white;
+    justify-content: center;
+  }
+  .perfumes article {
+    border: 1px solid black;
+    padding: 0.6rem;
+    text-align: center;
+    margin: 0.6rem;
+    border-radius: 3%;
+  }
+  .perfumes article .PerfumesNombres {
+    font-size: 2rem;
+  }
+  .perfumes article img {
+    border: 1px solid black;
+    border-radius: 3%;
+  }
+  .perfumes article .img {
+    height: 8rem;
+    width: 8rem;
+  }
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: white;
+  margin: 0;
+  box-sizing: border-box;
+  /* Mobile */
+  /* Tablet */
+}
+body header {
+  display: flex;
+  height: 23rem;
+  background-color: white;
+  justify-content: space-between;
+  padding: 2.5rem;
+  align-items: center;
+  font-size: 3.5rem;
+  font-family: "Courier New", Courier, monospace;
+}
+body header .logo {
+  display: flex;
+  align-items: center;
+}
+body header .logo img {
+  height: 30rem;
+}
+body .topnav a {
+  text-decoration: none;
+  color: black;
+  font-size: 2.5rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 800;
+  padding: 3rem;
+}
+body .publicidad {
+  justify-content: center;
+  display: flex;
+}
+body .publicidad aside img {
+  border: 1px solid black;
+  padding: 2rem;
+}
+body .lanzamiento {
+  display: flex;
+  padding: 5rem;
+  gap: 2rem;
+}
+body .lanzamiento .nl h3 {
+  font-size: 3rem;
+}
+body .lanzamiento .nl .img-nl {
+  width: 60rem;
+  border-radius: 5%;
+}
+body .lanzamiento .reseña {
+  height: 70rem;
+}
+body .lanzamiento .reseña h3 {
+  font-size: 3rem;
+}
+body .lanzamiento .reseña h4 {
+  font-size: 2.5rem;
+}
+body footer {
+  background-color: #f1f1f1;
+  padding: 2rem 0;
+  text-align: center;
+}
+body footer .footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+body footer .footer-content p {
+  margin: 0;
+  font-size: 1.4rem;
+  color: #333;
+}
+body footer .footer-content .social-media {
+  margin-top: 1rem;
+}
+body footer .footer-content .social-media a {
+  text-decoration: none;
+}
+body footer .footer-content .social-media .social-icon {
+  margin: 0 1rem;
+  display: inline-block;
+}
+body footer .footer-content .social-media .social-icon img {
+  width: 3rem;
+  height: 3rem;
+  transition: transform 0.3s ease;
+}
+body footer .footer-content .social-media .social-icon img:hover {
+  transform: scale(1.2);
+}
+body .descripcion {
+  justify-content: center;
+}
+body .descripcion .somos h3 {
+  font-size: 2.5rem;
+}
+body .descripcion .somos h4 {
+  font-size: 2rem;
+}
+body article .tabla {
+  margin: 2rem;
+  padding: 1rem;
+  text-align: center;
+}
+body article .tabla table td {
+  color: white;
+  width: 120rem;
+  background-color: white;
+  justify-content: center;
+  border: 1px solid black;
+  padding: 2rem;
+}
+body .generos h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+body .perfumes {
+  display: flex;
+  background-color: white;
+  justify-content: center;
+}
+body .perfumes article {
+  border: 1px solid black;
+  padding: 2rem;
+  text-align: center;
+  margin: 1.5rem;
+  border-radius: 3%;
+}
+body .perfumes article .PerfumesNombres {
+  font-size: 2rem;
+}
+body .perfumes article img {
+  border: 1px solid black;
+  border-radius: 3%;
+}
+body .perfumes article .img {
+  width: 30rem;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  body .layaout {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 2fr 0.5fr;
+    grid-template-areas: "nav" "header" "main" "aside" "aside" "footer";
+  }
+  body header {
+    font-size: 2rem;
+    padding: 2rem;
+    height: 15rem;
+    justify-content: space-between;
+    text-align: center;
+  }
+  body header .logo img {
+    height: 20rem;
+  }
+  body .topnav a {
+    font-size: 2rem;
+  }
+  body .publicidad aside img {
+    width: 60rem;
+  }
+  body .lanzamiento .nl .img-nl,
+  body .reseña,
+  body .perfumes article .img {
+    height: 25rem;
+    width: 25rem;
+  }
+  body .reseña {
+    height: 50rem;
+  }
+  body .reseña h3 {
+    font-size: 2rem;
+  }
+  body .reseña h4 {
+    font-size: 1.5rem;
+  }
+  body .tabla table td {
+    width: 120rem;
+  }
+  body .generos h2 {
+    font-size: 2rem;
+  }
+  body .perfumes article {
+    padding: 1rem;
+    margin: 1rem;
+  }
+  body .perfumes article .PerfumesNombres {
+    font-size: 2rem;
+  }
+  body .perfumes article .img {
+    height: 20rem;
+    width: 20rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  body .layaout {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0.5fr 2fr 2fr 0.5fr;
+  }
+  body header {
+    font-size: 1rem;
+    padding: 1rem;
+    height: 10rem;
+    justify-content: space-between;
+    text-align: center;
+  }
+  body header .logo img {
+    height: 10rem;
+  }
+  body .topnav a {
+    font-size: 1rem;
+  }
+  body .publicidad aside img {
+    width: 30rem;
+  }
+  body .lanzamiento .nl .img-nl,
+  body .reseña,
+  body .perfumes article .img {
+    height: 25rem;
+    width: 25rem;
+  }
+  body .reseña {
+    height: 50rem;
+  }
+  body .reseña h3 {
+    font-size: 2rem;
+  }
+  body .reseña h4 {
+    font-size: 1.5rem;
+  }
+  body .tabla table td {
+    width: 120rem;
+  }
+  body .generos h2 {
+    font-size: 1rem;
+  }
+  body .perfumes article {
+    padding: 0.6rem;
+    margin: 0.6rem;
+  }
+  body .perfumes article .PerfumesNombres {
+    font-size: 2rem;
+  }
+  body .perfumes article .img {
+    height: 8rem;
+    width: 8rem;
+  }
+}/*# sourceMappingURL=styles.css.map */

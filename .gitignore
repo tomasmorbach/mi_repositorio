@@ -1,0 +1,9 @@
+#ignora la carpeta de imagenes
+imagenes_cache
+
+#ignora todos los archivos de texto
+*.txt
+
+#ignora el archivo backgroun.jpg
+backgroung.jpg
+

@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../PYTHON/PROGRA 1"
+		},
+		{
+			"path": "../../PYTHON/tp ino"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "CODER"
+	}
+}

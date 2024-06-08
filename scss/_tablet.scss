@@ -1,0 +1,121 @@
+@media screen and (min-width: 768px)and (max-width:1023px){
+    .layaout{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 0.5fr 2fr 2fr 0.5fr;
+    }
+    /*HEADER*/
+    header{
+        font-size: 1rem;
+        padding: 1rem;
+        height: 10rem;
+        justify-content: space-between;
+        text-align: center;
+        .logo{
+            display: flex;
+            align-items: center;
+            img{
+                height: 10rem;
+            }
+        }
+    
+        body{
+            background-color: white;
+            margin: 0;
+            box-sizing: border-box;
+        }
+    
+        .topnav{
+            a{
+                text-decoration: none;
+                color: black;
+                font-size: 1rem;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+        }
+    }
+
+    /*LANZAMIENTO*/
+    .lanzamiento{
+        .nl{
+            h3{
+                font-size: 2rem;
+            }
+            .img-nl{
+                border: 1px solid black;
+                border-radius: 3%;
+                height: 25rem;
+                width: 25rem;
+            }
+        }
+        .reseña{
+            height: 50rem;
+            h3{
+                font-size: 2rem;
+            }
+            h4{
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    /*publicidad*/
+    .publicidad{
+        justify-content: center;
+        aside{
+            img{
+                width: 30rem;
+            } 
+        }
+    }
+
+
+    /* tabla de generos*/
+    article{
+        .tabla{
+            margin: 2rem;
+            padding: 1rem;
+            text-align: center;
+            table{
+                td{
+                    color: white;
+                    width: 120rem;
+                    background-color: white;
+                    justify-content: center;
+                    border: 1px solid black;
+                    padding: 2rem;
+                }
+            }
+        }
+    }
+
+    .generos{
+        h2{
+            font-size: 1rem;
+            text-align: center;
+        }
+    }
+    
+    .perfumes{
+        display: flex;
+        background-color: white;
+        justify-content: center;
+        article{
+            border: 1px solid black;
+            padding: 0.6rem;
+            text-align: center;
+            margin: 0.6rem;
+            border-radius: 3%;
+            .PerfumesNombres{
+                font-size: 2rem;
+            }
+            img{
+                border: 1px solid black;
+                border-radius: 3%;
+            }
+            .img{
+                height: 8rem;
+                width: 8rem;
+            }
+        }
+    }
+}

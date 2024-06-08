@@ -1,0 +1,30 @@
+
+.generos{
+    h2{
+        font-size: 3rem;
+        text-align: center;
+    }
+}
+
+.perfumes{
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    article{
+        border: 1px solid black;
+        padding: 2rem;
+        text-align: center;
+        margin: 1.5rem;
+        border-radius: 3%;
+        .PerfumesNombres{
+            font-size: 2rem;
+        }
+        img{
+            border: 1px solid black;
+            border-radius: 3%;
+        }
+        .img{
+            width: 30rem;
+        }
+    }
+}
